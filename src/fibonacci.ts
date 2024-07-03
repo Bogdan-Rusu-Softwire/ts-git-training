@@ -26,6 +26,7 @@ export const computeFibonacciNumber = (position: number, isRecursive: boolean = 
         const nextFibonacciNumber = smallFibonacciNumber + largeFibonacciNumber;
         smallFibonacciNumber = largeFibonacciNumber;
         largeFibonacciNumber = nextFibonacciNumber;
+        currentPosition++;
     }
     return largeFibonacciNumber;
 };
